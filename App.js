@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import Tasks from './Tasks';
+import Done from './Done';
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
+  const [done, setDone] = useState([]);
   const [val, setVal] = useState('');
 
   let handleSubmit = () => {
@@ -18,6 +20,7 @@ export default function App() {
       <Button onPress={() => handleSubmit()} title="Add Task"></Button>
       <Text>To-Do</Text>
       <Tasks tasks={tasks} />
+      <Done tasks={done} />
     </View>
   );
 }
