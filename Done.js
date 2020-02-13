@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, FlatList } from 'react-native';
+import { Text, View, FlatList, StyleSheet } from 'react-native';
 
 export default function Done(props) {
 
@@ -14,9 +14,22 @@ export default function Done(props) {
     )
   }
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Finished Tasks:</Text>
+      <hr /> 
       {content}
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: 'lightgrey',
+    borderRadius: 5,
+    boxShadow: '0 5px 10px black',
+    margin: '15px',
+    padding: '10px',
+    textAlign: 'center',
+    width: '150px',
+  },
+})
