@@ -16,7 +16,6 @@ export default function Done(props) {
   return (
     <View style={styles.container}>
       <Text>Finished Tasks:</Text>
-      <hr /> 
       {content}
     </View>
   )
@@ -26,10 +25,10 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'lightgrey',
     borderRadius: 5,
-    boxShadow: '0 5px 10px black',
-    margin: '15px',
-    padding: '10px',
+    // boxShadow: '0 5px 10px black',
+    margin: 15,
+    padding: 10,
     textAlign: 'center',
-    width: '150px',
+    width: 150,
   },
 })

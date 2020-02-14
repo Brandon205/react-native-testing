@@ -16,7 +16,6 @@ export default function Tasks(props) {
   return (
     <View style={styles.container}>
       <Text>Your Tasks:</Text>
-      <hr />
       {content}
     </View>
   )
@@ -25,18 +24,18 @@ export default function Tasks(props) {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'lightgrey',
-    borderRadius: '5px',
-    boxShadow: '0 5px 10px black',
-    margin: '15px',
-    padding: '10px',
+    borderRadius: 5,
+    // boxShadow: '0 5px 10px black',
+    margin: 15,
+    padding: 10,
     textAlign: 'center',
-    width: '150px'
+    width: 150
   },
   taskMessage: {
-    display: 'inline-block'
+    display: 'flex'
   },
   taskComplete: {
-    width: '10px',
-    display: 'inline-block'
+    width: 10,
+    display: 'flex'
   }
 })

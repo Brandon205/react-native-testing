@@ -46,16 +46,16 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightblue',
     textAlign: 'center',
     color: 'black',
-    marginBottom: '10px',
-    padding: '8px'
+    marginBottom: 10,
+    padding: 8
   },
   header: {
-    fontSize: '2em',
-    marginBottom: '5px'
+    fontSize: 45,
+    marginBottom: 5
   },
   addTaskButton: {
-    display: 'inline-block',
-    padding: '8px',
-    width: '100px'
+    display: 'flex',
+    padding: 8,
+    width: 100
   }
 });
